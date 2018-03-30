@@ -5,6 +5,14 @@
 
 
 <!-- CSS selector -->
+
+<!--      CSS Order        -->
+<!-- Classes are applied in the order they are declared -->
+<!-- Id styles override class styles -->
+<!-- Directly applied style overides all id/class styles -->
+<!-- !important keyword overrides everything else in css class decleration -->
+
+
 <style>
 	
 	h2 {  /* Style applied to element */
@@ -30,6 +38,10 @@
 		border-style: solid;
 		border-radius: 10px;	/* Gives borders rounded corners */
 		border-radius: 50%;		/* Makes border a complete circle */ 
+	}
+
+	.silver-background {
+		background-color: silver;
 	}	
 
 </style>
@@ -61,9 +73,41 @@
 	<button type="submit">button text</button>
 </form>		
 
-<!-- Radio Buttons -->
+<!-- Radio Buttons | Can be added to form -->
 <label><input type="radio" name="indoor-outdoor">indoor</label>
 <label><input type="radio" name="indoor-outdoor">outdoor</label>
+
+<!-- Checkboxes | Can be added to form -->
+<label><input type="checkbox" name="personality" checked>Loving</label>
+<label><input type="checkbox" name="personality">Angry</label>
+
+<!-- Division Element | div -->
+<div class="silver-background"
+	<p>This is the text inside the first paragraph</p>
+</div>
+
+<!-- id attribute | should be unique for each element -->
+<style>	/* CSS implementation */
+	#cat-photo-app {
+		background-color: green;
+	}
+</style>
+
+<h2 id="cat-photo-app">This is a H2 header</h2>
+
+<!--                Padding | Margin | Border                  -->
+<!-- Padding is the distance between an element and its border -->
+<!-- Margin is the distance between an element's border and other elements -->
+<style>
+	.yellow-box {
+		/* TOP - RIGHT - BOTTOM - LEFT */
+		padding: 10px 10px 10px 10px;
+		margin: 10px 10px 10px 10px;
+	}
+</style>
+
+<!-- Body | Every html page has a body element -->
+
 
 
 
