@@ -173,6 +173,13 @@
   	$("button").addClass("animated bounce");		// target element
   	$(".well").addClass("animated shake");			// target class
   	$("#target3").addClass("animated fadeOut");		// target id
+  	$("#target1").css("color", "red");				// changes css of target
+  	$("button").prop("disabled", true);				// adjust properties of elements
+  	$("#target4").remove();							// removes target
+  	$("#target2").appendTo("#right-well");			// moves element to another location
+  	$("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
 
   });
 </script>
